@@ -1,2 +1,2 @@
 # ImgBot
-A turnkey slack bot implementation which allows for OpenAI DALL-E image generation
+A slack bot implementation which allows for OpenAI DALL·E 2 image generation

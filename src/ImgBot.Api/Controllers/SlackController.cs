@@ -39,7 +39,7 @@ namespace ImgBot.Api.Controllers
         {
 
             var requestBody = await (new StreamReader(Request.Body)).ReadToEndAsync();
-            await _queue.EnqueueAsync((token) => { return _slackService.HandleSlashCommandAsync(text, response_url, channel_id, user_id, trigger_id, token); });
+            await _queue.EnqueueAsync((token) => { return _slackService.HandleSlashCommandAsync(text, response_url, channel_id, user_id, team_id, enterprise_id, trigger_id, token); });
             return Ok();
         }
 

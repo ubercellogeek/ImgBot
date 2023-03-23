@@ -1,0 +1,11 @@
+
+@page "/"
+@using ImgBot.Api.Pages
+@using ImgBot.Api.Configuration
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+@* <a href=@($"{SlackOptions.OAuth2AuthorizeUri}?scope=chat:write,commands&client_id={Model.Options.ClientId}&redirect_uri={Model.Options.OAuth2RedirectUri}&data={Model.Nonce}")>Add to Slack</a> *@

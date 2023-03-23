@@ -20,5 +20,8 @@ namespace ImgBot.Api.Models.Slack
         [JsonPropertyName("action_id")]
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public string? ActionId { get; set; }
+        [JsonPropertyName("url")]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+        public string? Url { get; set; }
     }
 }

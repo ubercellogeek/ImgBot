@@ -6,7 +6,7 @@ namespace ImgBot.Api.Models.Slack
         public string? Type { get; set; }
 
         [JsonPropertyName("user")]
-        public User? User { get; set; }
+        public User User { get; set; } = default!;
 
         [JsonPropertyName("api_app_id")]
         public string? ApiAppId { get; set; }
@@ -21,10 +21,10 @@ namespace ImgBot.Api.Models.Slack
         public string? TriggerId { get; set; }
 
         [JsonPropertyName("team")]
-        public Team? Team { get; set; }
+        public Team Team { get; set; } = default!;
 
         [JsonPropertyName("enterprise")]
-        public object? Enterprise { get; set; }
+        public Enterprise? Enterprise { get; set; }
 
         [JsonPropertyName("is_enterprise_install")]
         public bool IsEnterpriseInstall { get; set; }
